@@ -1,0 +1,113 @@
+name: Bug report
+description: Something in Breath Switch does not work, looks wrong or crashes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One problem per report, please.
+        Before you attach a screenshot, crop or cover anything private. Issues here are public.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "In the app: Settings, About. Or Android settings, Apps, Breath Switch."
+      placeholder: "1.4.6"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone, tablet or TV model
+      description: Android settings, About phone.
+      placeholder: Pixel 8
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: Android settings, About phone, Android version.
+      placeholder: "15"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or feature?"
+      options:
+        - "home (moods and length)"
+        - "how to close one side (first steps)"
+        - "a session (the planet, left and right)"
+        - "session chips (music, voice, vibrate, bubble)"
+        - "bubble"
+        - "done screen"
+        - "reminder invite"
+        - "sessions list"
+        - "a session page"
+        - "left side calm"
+        - "moon breath"
+        - "right side wake up"
+        - "sun breath"
+        - "focus reset"
+        - "alternate nostril"
+        - "alternate with pause"
+        - "sleep wind down"
+        - "science"
+        - "more (the three dots)"
+        - "home screen widget"
+        - "daily reminder"
+        - "workday check ins and focus call"
+        - "settings"
+        - "look (follow the phone, light, dark or black)"
+        - "sound, voice and touch"
+        - "breath pace"
+        - "privacy page"
+        - "help and feedback"
+        - "accessibility (talkback, large text)"
+        - "tv: home and side rail"
+        - "tv: a session on the remote"
+        - "tv: sessions"
+        - "tv: settings and sheets"
+        - "tv: qr codes (open on your phone)"
+        - "other"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, one step per line.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag the file in here. A short recording helps a lot with bugs in a session.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this is not there yet.
+          required: true
+        - label: My screenshots show nothing private.
+          required: true

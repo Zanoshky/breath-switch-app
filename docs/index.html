@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home · Breath Switch user guide</title>
+<meta name="description" content="The user guide for Breath Switch, nostril breathing for calm, focus and sleep on Android phones, tablets and TVs.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Home · Breath Switch user guide">
+<meta property="og:description" content="The user guide for Breath Switch, nostril breathing for calm, focus and sleep on Android phones, tablets and TVs.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/jetbrains-mono-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>:root {
+color-scheme: light dark;
+--zs-fill: #004cc0;
+--zs-on-fill: #ffffff;
+--zs-glow: #0068ff;
+--zs-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+--zs-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+--zs-fs: 1;
+--zs-type-screen-title: calc(27px * var(--zs-fs));
+--zs-type-app-bar-title: calc(22px * var(--zs-fs));
+--zs-type-pro-headline: calc(22px * var(--zs-fs));
+--zs-type-sheet-title: calc(18px * var(--zs-fs));
+--zs-type-sheet-title-big: calc(22px * var(--zs-fs));
+--zs-type-section-label: calc(13px * var(--zs-fs));
+--zs-type-panel-value: calc(19px * var(--zs-fs));
+--zs-type-number: calc(20px * var(--zs-fs));
+--zs-type-version: calc(17px * var(--zs-fs));
+--zs-type-body: calc(15px * var(--zs-fs));
+--zs-type-key: calc(15px * var(--zs-fs));
+--zs-type-key-main: calc(16px * var(--zs-fs));
+--zs-type-header-key: calc(13px * var(--zs-fs));
+--zs-type-item-name: calc(15px * var(--zs-fs));
+--zs-type-feature-name: calc(15px * var(--zs-fs));
+--zs-type-pitch: calc(14.5px * var(--zs-fs));
+--zs-type-hint: calc(14px * var(--zs-fs));
+--zs-type-small: calc(13.5px * var(--zs-fs));
+--zs-type-feature-line: calc(13px * var(--zs-fs));
+--zs-type-nav-label: calc(12.5px * var(--zs-fs));
+--zs-type-chip: calc(12.5px * var(--zs-fs));
+--zs-type-meta: calc(12.5px * var(--zs-fs));
+--zs-type-axis: calc(12px * var(--zs-fs));
+--zs-r-plate: 16px;
+--zs-r-key: 14px;
+--zs-r-key-focus-inner: 10px;
+--zs-r-header-key: 12px;
+--zs-r-icon-button: 12px;
+--zs-r-row: 12px;
+--zs-r-note: 12px;
+--zs-r-theme-tile: 14px;
+--zs-r-tile-preview: 9px;
+--zs-r-feature-tile: 10px;
+--zs-r-list-icon: 10px;
+--zs-r-sheet-top: 24px;
+--zs-r-grab: 4px;
+--zs-r-pill: 999px;
+--zs-r-chip: 999px;
+--zs-r-switch: 999px;
+--zs-key-h: 52px;
+--zs-header-key-h: 48px;
+--zs-touch: 48px;
+--zs-row-h: 52px;
+--zs-item-h: 56px;
+--zs-nav-item-h: 56px;
+--zs-pill-w: 60px;
+--zs-pill-h: 32px;
+--zs-pro-row-h: 60px;
+--zs-content-max: 1100px;
+--zs-press-ms: 70ms;
+--zs-release-ms: 140ms;
+--zs-look-ms: 250ms;
+--zs-pill-ms: 200ms;
+--zs-s0: 2px;
+--zs-s1: 4px;
+--zs-s2: 6px;
+--zs-s3: 8px;
+--zs-s4: 10px;
+--zs-s5: 12px;
+--zs-s6: 14px;
+--zs-s7: 16px;
+--zs-s8: 18px;
+--zs-s9: 22px;
+--zs-s10: 26px;
+--zs-s11: 28px;
+--zs-s12: 32px;
+--zs-s13: 48px;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+@media (prefers-color-scheme: dark) {
+:root:not([data-look]), :root[data-look="auto"] {
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+}
+:root[data-look="light"] {
+color-scheme: light;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+:root[data-look="dark"] {
+color-scheme: dark;
+--zs-ground: #111215;
+--zs-plate: #18191d;
+--zs-well: #1f2126;
+--zs-line: #2a2c33;
+--zs-edge: #6c707b;
+--zs-bevel: #3a3d46;
+--zs-text: #eceef2;
+--zs-soft: #b5b8c1;
+--zs-blue: #86b6ff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.55);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+:root[data-look="black"] {
+color-scheme: dark;
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+@media (prefers-reduced-motion: reduce) { :root { --zs-press-ms: 0ms; --zs-release-ms: 0ms; --zs-look-ms: 0ms; --zs-pill-ms: 0ms; } }
+@font-face { font-family: Inter; src: url(fonts/inter-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Inter; src: url(fonts/inter-semibold.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+:root, :root[data-look="light"] { --bs-left: #0a524d; --bs-right: #793300; }
+@media (prefers-color-scheme: dark) { :root:not([data-look]), :root[data-look="auto"] { --bs-left: #7cf0e2; --bs-right: #ffc78a; } }
+.left { color: var(--bs-left); font-weight: 600; }
+.right { color: var(--bs-right); font-weight: 600; }
+* { box-sizing: border-box; }
+html { background: var(--zs-ground); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; color: var(--zs-text); background: var(--zs-ground); font: 400 1.0625rem/1.6 var(--zs-sans); -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+a { color: var(--zs-blue); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--zs-glow); outline-offset: 3px; border-radius: var(--zs-r-row); }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 20; background: var(--zs-fill); color: var(--zs-on-fill); padding: 12px 18px; border-radius: var(--zs-r-key); font-weight: 600; }
+.skip:focus { left: 12px; }
+.wrap { width: min(var(--zs-content-max), 100% - 40px); margin-inline: auto; }
+h1, h2, .lbl { font-family: var(--zs-mono); font-weight: 700; letter-spacing: 0; margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+h1 { font-size: clamp(2rem, 5.2vw, 3rem); line-height: 1.12; }
+h2 { font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.2; margin: 44px 0 12px; }
+h3, .h3 { font: 600 1.125rem/1.35 var(--zs-sans); margin: 0; }
+.lbl { font-size: .875rem; color: var(--zs-soft); margin: 0 0 10px; }
+p { margin: 0; }
+p + p { margin-top: 12px; }
+.bar { position: sticky; top: 0; z-index: 10; background: var(--zs-ground); border-bottom: 1px solid var(--zs-line); padding-top: env(safe-area-inset-top, 0px); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 12px; min-height: 64px; padding-block: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 48px; color: var(--zs-text); text-decoration: none; font: 700 1.25rem/1 var(--zs-mono); white-space: nowrap; }
+.brand img { width: 34px; height: 34px; border-radius: 9px; }
+.bar nav { display: flex; align-items: center; gap: 4px; }
+.bar nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: var(--zs-r-row); color: var(--zs-soft); font-weight: 600; font-size: .9375rem; text-decoration: none; white-space: nowrap; }
+.bar nav a:hover, .bar nav a[aria-current] { color: var(--zs-text); background: var(--zs-well); }
+@media (max-width: 760px) { .hide-s { display: none !important; } }
+.key { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: var(--zs-key-h); padding: 0 22px; border-radius: var(--zs-r-key); border: 1px solid transparent; font: 600 1rem/1.2 var(--zs-sans); text-decoration: none; text-align: center; cursor: pointer; transition: transform var(--zs-release-ms) ease, filter var(--zs-release-ms) ease; }
+.key:active { transform: scale(.97); transition-duration: var(--zs-press-ms); }
+.key.filled, .bar nav a.key { color: var(--zs-on-fill); background: linear-gradient(var(--zs-fill), var(--zs-fill)) padding-box, linear-gradient(to bottom, rgba(255,255,255,.32), color-mix(in srgb, var(--zs-fill) 65%, #000) 45%) border-box; }
+.key.filled:hover, .bar nav a.key:hover { color: var(--zs-on-fill); filter: brightness(1.08); }
+.bar nav a.key { min-height: 48px; padding: 0 18px; border-radius: var(--zs-r-header-key); }
+.key.tonal { color: var(--zs-text); background: linear-gradient(var(--zs-well), var(--zs-well)) padding-box, linear-gradient(to bottom, var(--zs-bevel), var(--zs-line) 45%) border-box; }
+.keys { display: grid; gap: 10px; margin-top: 28px; max-width: 34rem; }
+@media (min-width: 35em) { .keys { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
+.plate { background: var(--zs-plate); border: 1px solid var(--zs-line); border-radius: var(--zs-r-plate); box-shadow: 0 1px 0 var(--zs-bevel) inset; }
+.page { position: relative; isolation: isolate; padding-block: 40px 72px; }
+.page::before { content: ""; position: absolute; inset: 0 0 auto; height: 320px; z-index: -1; pointer-events: none; background: radial-gradient(60% 100% at 50% 0%, color-mix(in srgb, var(--zs-glow) 12%, transparent), transparent); }
+.lede { margin-top: 16px; max-width: 40rem; color: var(--zs-soft); font-size: clamp(1.0625rem, 1.8vw, 1.25rem); }
+.doc { max-width: 46rem; overflow-wrap: break-word; }
+.doc p, .doc li { color: var(--zs-soft); }
+.doc strong, .doc b { color: var(--zs-text); font-weight: 600; }
+.doc ul, .doc ol { padding-left: 1.3em; }
+.doc li + li { margin-top: 6px; }
+dl.rows { margin: 16px 0 0; padding: 4px 0; }
+dl.rows > div { padding: 14px 18px; }
+dl.rows > div + div { border-top: 1px solid var(--zs-line); }
+dl.rows dt { font-weight: 600; color: var(--zs-text); }
+dl.rows dd { margin: 2px 0 0; color: var(--zs-soft); }
+.with-shot { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (min-width: 840px) { .with-shot { grid-template-columns: minmax(0, 1fr) 260px; gap: 56px; } .with-shot > figure { position: sticky; top: 88px; margin-top: 44px; } }
+figure { margin: 0; }
+figure img { width: 100%; height: auto; aspect-ratio: 9 / 20; border-radius: 20px; border: 1px solid var(--zs-line); background: var(--zs-plate); }
+.with-shot > figure { max-width: 260px; }
+figcaption { margin-top: 10px; font-weight: 600; }
+figcaption span { display: block; font-weight: 400; color: var(--zs-soft); font-size: .9375rem; }
+.shots { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 32px 0 0; padding: 0; list-style: none; }
+@media (min-width: 840px) { .shots { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; } }
+figure.tv img { aspect-ratio: 16 / 9; border-radius: 14px; }
+.tvshots { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); margin: 24px 0 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .tvshots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+@media (min-width: 840px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { padding: 22px; display: flex; flex-direction: column; gap: 6px; }
+.card p { color: var(--zs-soft); }
+.card .key { margin-top: auto; align-self: start; }
+.card p:last-of-type { margin-bottom: 14px; }
+.mail { color: var(--zs-text); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+footer { border-top: 1px solid var(--zs-line); padding: 28px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--zs-soft); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+footer nav { display: flex; flex-wrap: wrap; gap: 2px; margin-inline: -12px; }
+footer nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 12px; color: var(--zs-soft); border-radius: var(--zs-r-row); }
+footer nav a:hover, footer nav a[aria-current] { color: var(--zs-text); }
+footer .lic { flex-basis: 100%; font-size: .9375rem; }
+@media (min-width: 2200px) { html { font-size: 130%; } .wrap { width: min(1600px, 100% - 96px); } }
+@media (min-width: 3200px) { html { font-size: 180%; } .wrap { width: min(2400px, 100% - 160px); } }
+@media (prefers-reduced-motion: reduce) { .key { transition: none; } .key:active { transform: none; } }</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Breath Switch</span></a>
+    <nav aria-label="Guide pages"><a class="hide-s" href="index.html" aria-current="page">Home</a><a class="hide-s" href="guide.html">Guide</a><a class="hide-s" href="faq.html">Questions</a><a class="hide-s" href="report.html">Report a bug</a><a class="key" href="https://play.google.com/store/apps/details?id=com.zanoshky.breathswitch">Get the app</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+
+    <p class="lbl">User guide</p>
+    <h1>Breath Switch</h1>
+    <p class="lede">Breathing exercises through one nostril or both in turn. Close one side and breathe through the other: the <span class="left">left</span> for calm, the <span class="right">right</span> for focus, both in turn to find the middle, and a slow wind down for sleep. Pay once, no ads, no account, fully offline. On phones, tablets, Android TV and Google TV.</p>
+    <div class="keys">
+      <a class="key filled" href="guide.html">Read the guide</a>
+      <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
+    </div>
+    <ul class="shots">
+      <li><figure><img src="img/home.jpg" srcset="img/home-300.webp 300w, img/home-540.webp 540w" sizes="(min-width: 840px) 260px, 45vw" alt="Breath Switch Home in Dark: Good evening, How do you want to feel?, the planet of light with its teal left half lit, LEFT BREATHE and RIGHT CLOSED, the 2, 5 and 10 min lengths, and the Calm, Focus, Balance and Sleep tiles, with Home, Sessions, Science and Settings in the bar." width="540" height="1200" fetchpriority="high"><figcaption>Home<span>How do you want to feel?</span></figcaption></figure></li>
+      <li><figure><img src="img/session.jpg" srcset="img/session-300.webp 300w, img/session-540.webp 540w" sizes="(min-width: 840px) 260px, 45vw" alt="A Moon Breath session in Dark: the planet with its amber right half lit, LEFT CLOSED and RIGHT BREATHE, the Music, Voice, Vibrate and Bubble chips, the count ring at 1 beside Breathe out, Switch. Close the left. Breathe out through the right., and the back a breath, pause and finish keys." width="540" height="1200" loading="lazy" decoding="async"><figcaption>A session<span>Which side to close, every breath.</span></figcaption></figure></li>
+      <li><figure><img src="img/sessions.jpg" srcset="img/sessions-300.webp 300w, img/sessions-540.webp 540w" sizes="(min-width: 840px) 260px, 45vw" alt="Sessions in Dark, grouped by Calm, Focus and Balance: Left Side Calm, Moon Breath, Right Side Wake Up, Sun Breath, Focus Reset, Alternate Nostril and Alternate With Pause, each with its length and counts, and On the home tile under the tile sessions." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Sessions<span>Eight, from 2 to 15 minutes.</span></figcaption></figure></li>
+      <li><figure><img src="img/settings.jpg" srcset="img/settings-300.webp 300w, img/settings-540.webp 540w" sizes="(min-width: 840px) 260px, 45vw" alt="Settings in Dark: Look, then Sessions with Sound, voice and touch and Breath pace, Reminders with Daily reminder and Workday, Home screen with Add the widget, and App." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Settings<span>The last item in the bar.</span></figcaption></figure></li>
+    </ul>
+    <ul class="tvshots">
+      <li><figure class="tv"><img src="img/tv-home.jpg" srcset="img/tv-home-480.webp 480w, img/tv-home-960.webp 960w" sizes="(min-width: 1140px) 540px, (min-width: 640px) 48vw, 100vw" alt="Breath Switch Home on a TV with the side rail on the left: A quiet night, minutes today and days in a row, the planet, the Length row with 5 min chosen and the Calm tile in focus." width="960" height="540" loading="lazy" decoding="async"><figcaption>On a TV<span>Calm is in focus: press OK.</span></figcaption></figure></li>
+      <li><figure class="tv"><img src="img/tv-session.jpg" srcset="img/tv-session-480.webp 480w, img/tv-session-960.webp 960w" sizes="(min-width: 1140px) 540px, (min-width: 640px) 48vw, 100vw" alt="A Left Side Calm session on a TV: the planet on the left with its teal half lit, Breathe in with the count ring at 4, the pause key in focus and the hint OK pauses, Back ends the session." width="960" height="540" loading="lazy" decoding="async"><figcaption>A session on a TV<span>OK pauses, Back ends.</span></figcaption></figure></li>
+    </ul>
+
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Breath Switch by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer"><a href="https://breathswitch.zanoski.com">Home</a><a href="index.html" aria-current="page">User guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a><a href="https://breathswitch.zanoski.com/privacy">Privacy</a><a href="https://breathswitch.zanoski.com/terms">Terms</a></nav>
+    <p class="lic">Guide text and images are shared under CC BY 4.0. The Breath Switch app itself is proprietary.</p>
+  </div>
+</footer>
+</body>
+</html>

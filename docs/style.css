@@ -1,0 +1,110 @@
+/* The Breath Switch guide on the Zanoshky Standard, the same as breathswitch.zanoski.com. Every colour comes from
+   tokens.css (the house tokens, copied as is) plus Breath Switch's two sides: teal is always left, amber right. */
+@font-face { font-family: Inter; src: url(fonts/inter-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Inter; src: url(fonts/inter-semibold.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+
+:root, :root[data-look="light"] { --bs-left: #0a524d; --bs-right: #793300; }
+@media (prefers-color-scheme: dark) { :root:not([data-look]), :root[data-look="auto"] { --bs-left: #7cf0e2; --bs-right: #ffc78a; } }
+.left { color: var(--bs-left); font-weight: 600; }
+.right { color: var(--bs-right); font-weight: 600; }
+
+* { box-sizing: border-box; }
+html { background: var(--zs-ground); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; color: var(--zs-text); background: var(--zs-ground); font: 400 1.0625rem/1.6 var(--zs-sans); -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+a { color: var(--zs-blue); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--zs-glow); outline-offset: 3px; border-radius: var(--zs-r-row); }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 20; background: var(--zs-fill); color: var(--zs-on-fill); padding: 12px 18px; border-radius: var(--zs-r-key); font-weight: 600; }
+.skip:focus { left: 12px; }
+.wrap { width: min(var(--zs-content-max), 100% - 40px); margin-inline: auto; }
+
+h1, h2, .lbl { font-family: var(--zs-mono); font-weight: 700; letter-spacing: 0; margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+h1 { font-size: clamp(2rem, 5.2vw, 3rem); line-height: 1.12; }
+h2 { font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.2; margin: 44px 0 12px; }
+h3, .h3 { font: 600 1.125rem/1.35 var(--zs-sans); margin: 0; }
+.lbl { font-size: .875rem; color: var(--zs-soft); margin: 0 0 10px; }
+p { margin: 0; }
+p + p { margin-top: 12px; }
+
+/* The top bar */
+.bar { position: sticky; top: 0; z-index: 10; background: var(--zs-ground); border-bottom: 1px solid var(--zs-line); padding-top: env(safe-area-inset-top, 0px); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 12px; min-height: 64px; padding-block: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 48px; color: var(--zs-text); text-decoration: none; font: 700 1.25rem/1 var(--zs-mono); white-space: nowrap; }
+.brand img { width: 34px; height: 34px; border-radius: 9px; }
+.bar nav { display: flex; align-items: center; gap: 4px; }
+.bar nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: var(--zs-r-row); color: var(--zs-soft); font-weight: 600; font-size: .9375rem; text-decoration: none; white-space: nowrap; }
+.bar nav a:hover, .bar nav a[aria-current] { color: var(--zs-text); background: var(--zs-well); }
+@media (max-width: 760px) { .hide-s { display: none !important; } }
+
+/* Keys */
+.key { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: var(--zs-key-h); padding: 0 22px; border-radius: var(--zs-r-key); border: 1px solid transparent; font: 600 1rem/1.2 var(--zs-sans); text-decoration: none; text-align: center; cursor: pointer; transition: transform var(--zs-release-ms) ease, filter var(--zs-release-ms) ease; }
+.key:active { transform: scale(.97); transition-duration: var(--zs-press-ms); }
+.key.filled, .bar nav a.key { color: var(--zs-on-fill); background: linear-gradient(var(--zs-fill), var(--zs-fill)) padding-box, linear-gradient(to bottom, rgba(255,255,255,.32), color-mix(in srgb, var(--zs-fill) 65%, #000) 45%) border-box; }
+.key.filled:hover, .bar nav a.key:hover { color: var(--zs-on-fill); filter: brightness(1.08); }
+.bar nav a.key { min-height: 48px; padding: 0 18px; border-radius: var(--zs-r-header-key); }
+.key.tonal { color: var(--zs-text); background: linear-gradient(var(--zs-well), var(--zs-well)) padding-box, linear-gradient(to bottom, var(--zs-bevel), var(--zs-line) 45%) border-box; }
+.keys { display: grid; gap: 10px; margin-top: 28px; max-width: 34rem; }
+@media (min-width: 35em) { .keys { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
+
+.plate { background: var(--zs-plate); border: 1px solid var(--zs-line); border-radius: var(--zs-r-plate); box-shadow: 0 1px 0 var(--zs-bevel) inset; }
+
+/* Pages */
+.page { position: relative; isolation: isolate; padding-block: 40px 72px; }
+.page::before { content: ""; position: absolute; inset: 0 0 auto; height: 320px; z-index: -1; pointer-events: none; background: radial-gradient(60% 100% at 50% 0%, color-mix(in srgb, var(--zs-glow) 12%, transparent), transparent); }
+.lede { margin-top: 16px; max-width: 40rem; color: var(--zs-soft); font-size: clamp(1.0625rem, 1.8vw, 1.25rem); }
+.doc { max-width: 46rem; overflow-wrap: break-word; }
+.doc p, .doc li { color: var(--zs-soft); }
+.doc strong, .doc b { color: var(--zs-text); font-weight: 600; }
+.doc ul, .doc ol { padding-left: 1.3em; }
+.doc li + li { margin-top: 6px; }
+
+/* A definition list as one plate of rows: the name in the text colour, its line in the soft colour. */
+dl.rows { margin: 16px 0 0; padding: 4px 0; }
+dl.rows > div { padding: 14px 18px; }
+dl.rows > div + div { border-top: 1px solid var(--zs-line); }
+dl.rows dt { font-weight: 600; color: var(--zs-text); }
+dl.rows dd { margin: 2px 0 0; color: var(--zs-soft); }
+
+/* A guide section with its real screenshot beside it on wide screens, under it on a phone. */
+.with-shot { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (min-width: 840px) { .with-shot { grid-template-columns: minmax(0, 1fr) 260px; gap: 56px; } .with-shot > figure { position: sticky; top: 88px; margin-top: 44px; } }
+figure { margin: 0; }
+figure img { width: 100%; height: auto; aspect-ratio: 9 / 20; border-radius: 20px; border: 1px solid var(--zs-line); background: var(--zs-plate); }
+.with-shot > figure { max-width: 260px; }
+figcaption { margin-top: 10px; font-weight: 600; }
+figcaption span { display: block; font-weight: 400; color: var(--zs-soft); font-size: .9375rem; }
+
+.shots { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 32px 0 0; padding: 0; list-style: none; }
+@media (min-width: 840px) { .shots { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; } }
+
+/* TV screenshots: landscape, two across from 640px. */
+figure.tv img { aspect-ratio: 16 / 9; border-radius: 14px; }
+.tvshots { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr); margin: 24px 0 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .tvshots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Report cards */
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+@media (min-width: 840px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { padding: 22px; display: flex; flex-direction: column; gap: 6px; }
+.card p { color: var(--zs-soft); }
+.card .key { margin-top: auto; align-self: start; }
+.card p:last-of-type { margin-bottom: 14px; }
+
+.mail { color: var(--zs-text); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+footer { border-top: 1px solid var(--zs-line); padding: 28px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--zs-soft); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+footer nav { display: flex; flex-wrap: wrap; gap: 2px; margin-inline: -12px; }
+footer nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 12px; color: var(--zs-soft); border-radius: var(--zs-r-row); }
+footer nav a:hover, footer nav a[aria-current] { color: var(--zs-text); }
+footer .lic { flex-basis: 100%; font-size: .9375rem; }
+
+@media (min-width: 2200px) { html { font-size: 130%; } .wrap { width: min(1600px, 100% - 96px); } }
+@media (min-width: 3200px) { html { font-size: 180%; } .wrap { width: min(2400px, 100% - 160px); } }
+@media (prefers-reduced-motion: reduce) { .key { transition: none; } .key:active { transform: none; } }

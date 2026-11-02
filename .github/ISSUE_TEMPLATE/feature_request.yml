@@ -1,0 +1,73 @@
+name: Feature request
+description: An idea for something Breath Switch could do.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want
+      description: Describe the feature in a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it help you do? A real example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or feature?"
+      options:
+        - "home (moods and length)"
+        - "how to close one side (first steps)"
+        - "a session (the planet, left and right)"
+        - "session chips (music, voice, vibrate, bubble)"
+        - "bubble"
+        - "done screen"
+        - "reminder invite"
+        - "sessions list"
+        - "a session page"
+        - "left side calm"
+        - "moon breath"
+        - "right side wake up"
+        - "sun breath"
+        - "focus reset"
+        - "alternate nostril"
+        - "alternate with pause"
+        - "sleep wind down"
+        - "science"
+        - "more (the three dots)"
+        - "home screen widget"
+        - "daily reminder"
+        - "workday check ins and focus call"
+        - "settings"
+        - "look (follow the phone, light, dark or black)"
+        - "sound, voice and touch"
+        - "breath pace"
+        - "privacy page"
+        - "help and feedback"
+        - "accessibility (talkback, large text)"
+        - "tv: home and side rail"
+        - "tv: a session on the remote"
+        - "tv: sessions"
+        - "tv: settings and sheets"
+        - "tv: qr codes (open on your phone)"
+        - "other"
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Pictures or links
+      description: A sketch, a screenshot or a link to something similar.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this idea is not there yet.
+          required: true
