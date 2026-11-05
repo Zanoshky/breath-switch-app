@@ -21,7 +21,7 @@ This repo is the public home for Breath Switch users: the user guide, bug report
 
 ## Quick start
 
-1. Install Breath Switch from Google Play. It runs on Android 7 or newer, and on Android TV and Google TV.
+1. Install Breath Switch from Google Play. It runs on Android 10 or newer, and on Android TV and Google TV.
 2. Follow the three first steps: lift your right hand, press one side of your nose shut with your thumb, breathe slowly through the other.
 3. On Home, pick 2, 5 or 10 minutes and a mood: Calm, Focus, Balance or Sleep.
 4. Follow the planet of light: the open side glows, the closed side goes dark. Teal is always left, amber always right.
