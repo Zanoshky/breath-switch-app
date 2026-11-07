@@ -213,7 +213,6 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
           <div><dt>Home screen</dt><dd>Add the widget.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, the three permissions and why, where your practice is kept, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page and the privacy policy.</dd></div>
-          <div><dt>Support the developer</dt><dd>If Breath Switch helps you, you can support it: Buy me a coffee opens buymeacoffee.com/zanoshky.</dd></div>
           <div><dt>About</dt><dd>The version, and the credits for the sounds, the music, the voice and the type. Your minutes, streak and settings stay on this phone.</dd></div>
         </dl>
       </div>
@@ -235,7 +234,7 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
       {tv("tv-home.jpg", "Breath Switch Home on a TV with the side rail on the left: A quiet night, minutes today and days in a row, the planet, the Length row with 5 min chosen and the Calm tile in focus.", "Home on a TV", "Calm is in focus.")}
       {tv("tv-session.jpg", "A Left Side Calm session on a TV: the planet on the left with its teal half lit, Breathe in with the count ring at 4, the pause key in focus and the hint OK pauses, Back ends the session.", "A session", "OK pauses, Back ends.")}
       {tv("tv-sessions.jpg", "Sessions on a TV in two columns of Calm, Focus, Balance and Sleep plates, with Left Side Calm in focus and the home tile sessions marked.", "Sessions", "Pick one with the remote.")}
-      {tv("tv-settings.jpg", "Settings on a TV: Look in focus, Sound and voice, Breath pace, About, Privacy, Help and feedback and Buy me a coffee.", "Settings", "No reminders or touch on a TV.")}
+      {tv("tv-settings.jpg", "Settings on a TV: Look in focus, Sound and voice, Breath pace, About, Privacy, and Help and feedback.", "Settings", "No reminders or touch on a TV.")}
     </ul>
 
     <div class="with-shot">
