@@ -7,7 +7,7 @@
 <p align="center">Breathing exercises for stress relief, calm, focus and sleep, through one nostril or both in turn. Pay once, no ads, fully offline.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.breathswitch"><b>Google Play</b></a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.breathswitch&amp;referrer=utm_source%3Dgithub-readme%26utm_medium%3Dreferral%26utm_campaign%3Dbreath-switch-2026-11"><b>Google Play</b></a> ·
   <a href="https://breathswitch.zanoski.com"><b>breathswitch.zanoski.com</b></a> ·
   <a href="https://zanoshky.github.io/breath-switch-app/"><b>User guide</b></a> ·
   <a href="https://github.com/Zanoshky/breath-switch-app/issues/new/choose"><b>Report a bug</b></a>

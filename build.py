@@ -9,7 +9,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/breath-switch-app"
-PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.breathswitch"
+PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.breathswitch&amp;referrer=utm_source%3Dgithub-guide%26utm_medium%3Dreferral%26utm_campaign%3Dbreath-switch-2026-11"
 SITE = "https://breathswitch.zanoski.com"
 MAIL = "support@zanoski.com"
 NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
