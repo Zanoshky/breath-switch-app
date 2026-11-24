@@ -210,6 +210,7 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
           <div><dt>Sound, voice and touch</dt><dd>Calm music under the session, soft tones as the breath turns, and the voice guide; her voice (warm and a little playful) or his (deep and steady); a light tap on each change and a hum that rises and falls with your breath; and with the music off, a Tanpura drone, Ocean waves, Night crickets or Silence.</dd></div>
           <div><dt>Breath pace</dt><dd>A little quicker, As written, Slower or Slowest.</dd></div>
           <div><dt>Daily reminder and Workday</dt><dd>Each off until you turn it on, with its times and days.</dd></div>
+          <div><dt>Language</dt><dd>Pick the app's language from the list, or Follow the phone. New in 1.15.</dd></div>
           <div><dt>Home screen</dt><dd>Add the widget.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, the three permissions and why, where your practice is kept, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page and the privacy policy.</dd></div>
@@ -278,6 +279,8 @@ page("faq.html", "Questions", "Answers to common questions about Breath Switch, 
     <h2>What is the bubble?</h2>
     <p>A simpler picture to follow: one bubble that grows and shrinks with your breath, in place of the planet. Tap Bubble in a session, or turn on Just a bubble to follow in Settings, Look. It needs no permission.</p>
 
+    <h2>Can I change the app's language?</h2>
+    <p>Yes. Settings, Language: pick the language, or choose Follow the phone. The same choice is in the phone's Settings, Apps, Breath Switch, Language.</p>
     <h2>How do I add the widget?</h2>
     <p>Settings, Home screen, Add the widget, or More, Add the widget. Or touch and hold your home screen, pick Widgets, then Breath Switch.</p>
 
