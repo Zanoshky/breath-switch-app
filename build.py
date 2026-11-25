@@ -193,7 +193,7 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
     <div class="with-shot">
       <div class="doc">
         <h2>The widget</h2>
-        <p>Start Calm or Focus from your home screen with one tap; widen it for Balance and Sleep. It starts the Home tile's session at the Home length. Add it from Settings, Home screen, Add the widget, or from More.</p>
+        <p>Start Calm or Focus from your home screen with one tap; widen it for Balance and Sleep. It starts the Home tile's session at the Home length. Add it from Settings, Widget, or from More.</p>
 
         <h2>Reminders</h2>
         <p>Every reminder is off until you turn it on. The daily reminder is one gentle note a day at your time, and none on days you have already breathed with Breath Switch. Workday adds two calm check ins at easy moments in your work hours, none right after a session, and a call to deep focus at your time, only on the days you pick. On Android 13 and newer, Android asks for notifications when you turn one on.</p>
@@ -204,17 +204,18 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
     <div class="with-shot">
       <div class="doc">
         <h2>Settings</h2>
-        <p>Settings is the last item in the bar: cards of rows, each saying what is set now. A row opens its own small page; Back takes you to the hub.</p>
+        <p>Settings is the last item in the bar: cards of rows, each saying what is set now. A row opens its own small page; Back takes you to the hub. Privacy, Help and feedback and About sit at the end.</p>
+        <p><strong>New in 1.16:</strong> Settings is tidier. About and the widget have pages of their own, and Privacy, Help and About sit at the end.</p>
         <dl class="rows plate">
           <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), Light, Dark, or Black, true black for OLED. And Just a bubble to follow, no planet.</dd></div>
           <div><dt>Sound, voice and touch</dt><dd>Calm music under the session, soft tones as the breath turns, and the voice guide; her voice (warm and a little playful) or his (deep and steady); a light tap on each change and a hum that rises and falls with your breath; and with the music off, a Tanpura drone, Ocean waves, Night crickets or Silence.</dd></div>
           <div><dt>Breath pace</dt><dd>A little quicker, As written, Slower or Slowest.</dd></div>
           <div><dt>Daily reminder and Workday</dt><dd>Each off until you turn it on, with its times and days.</dd></div>
           <div><dt>Language</dt><dd>Pick the app's language from the list, or Follow the phone. New in 1.15.</dd></div>
-          <div><dt>Home screen</dt><dd>Add the widget.</dd></div>
+          <div><dt>Widget</dt><dd>Opens its own page, where you add the widget to your home screen.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, the three permissions and why, where your practice is kept, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page and the privacy policy.</dd></div>
-          <div><dt>About</dt><dd>The version, and the credits for the sounds, the music, the voice and the type. Your minutes, streak and settings stay on this phone.</dd></div>
+          <div><dt>About</dt><dd>Opens its own page, last in the list: the version, and the credits for the sounds, the music, the voice and the type. Your minutes, streak and settings stay on this phone.</dd></div>
         </dl>
       </div>
       {shot("sound.jpg", SOUND_ALT, "Sound, voice and touch", "Music, a voice, a hum.")}
@@ -282,7 +283,7 @@ page("faq.html", "Questions", "Answers to common questions about Breath Switch, 
     <h2>Can I change the app's language?</h2>
     <p>Yes. Settings, Language: pick the language, or choose Follow the phone. The same choice is in the phone's Settings, Apps, Breath Switch, Language.</p>
     <h2>How do I add the widget?</h2>
-    <p>Settings, Home screen, Add the widget, or More, Add the widget. Or touch and hold your home screen, pick Widgets, then Breath Switch.</p>
+    <p>Settings, Widget, Add the widget, or More, Add the widget. Or touch and hold your home screen, pick Widgets, then Breath Switch.</p>
 
     <h2>Does it need the internet?</h2>
     <p>No. It works anywhere, fully offline, and cannot connect at all.</p>
