@@ -205,6 +205,7 @@ page("guide.html", "Guide", "How to use Breath Switch: the moods, the sessions, 
       <div class="doc">
         <h2>Settings</h2>
         <p>Settings is the last item in the bar: cards of rows, each saying what is set now. A row opens its own small page; Back takes you to the hub. Privacy, Help and feedback and About sit at the end.</p>
+        <p><strong>New in 1.17:</strong> Smaller, easier to read titles at the top of every page.</p>
         <p><strong>New in 1.16:</strong> Settings is tidier. About and the widget have pages of their own, and Privacy, Help and About sit at the end.</p>
         <dl class="rows plate">
           <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), Light, Dark, or Black, true black for OLED. And Just a bubble to follow, no planet.</dd></div>
